@@ -20,6 +20,9 @@ data class TvShowResponse(
     @SerializedName("overview")
     val desc: String,
 
+    @SerializedName("vote_average")
+    val vote_average: Double,
 
-    val vote_average: Double
+    @SerializedName("backdrop_path")
+    val backdrop: String
 )

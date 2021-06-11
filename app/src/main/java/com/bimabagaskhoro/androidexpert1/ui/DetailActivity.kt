@@ -14,7 +14,7 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 class DetailActivity : AppCompatActivity() {
 
     companion object {
-        const val DETAIL_TV_SHOW = "Detail"
+        const val DETAIL_TV_SHOW = "DETAIL"
         const val DATA = "data"
         const val LINK_IMAGE = "https://image.tmdb.org/t/p/w500"
     }
@@ -41,6 +41,12 @@ class DetailActivity : AppCompatActivity() {
                     .load(LINK_IMAGE + detailtvShow.avatar)
                     .transform(RoundedCorners(20))
                     .into(imgDetail)
+
+                Glide.with(this@DetailActivity)
+                    .load(LINK_IMAGE + detailtvShow.backdrop)
+                    .transform(RoundedCorners(20))
+                    .into(imgBackdrop)
+
 
                 tvTitleDetail.text = detailtvShow.title
                 tvDateDetail.text = detailtvShow.date

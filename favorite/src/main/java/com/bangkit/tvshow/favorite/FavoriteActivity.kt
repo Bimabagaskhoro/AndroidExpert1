@@ -18,7 +18,7 @@ class FavoriteActivity : AppCompatActivity() {
     private val favViewModel: FavoriteViewModel by viewModel()
 
     companion object {
-        const val FAVORITE = "favorite"
+        const val FAVORITE = "FAVORITE"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

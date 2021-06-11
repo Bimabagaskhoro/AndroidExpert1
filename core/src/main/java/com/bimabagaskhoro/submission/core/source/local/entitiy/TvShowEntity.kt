@@ -22,5 +22,7 @@ data class TvShowEntity(
 
     val vote_average: Double,
 
+    val backdrop: String,
+
     var isFav: Boolean = false
 )

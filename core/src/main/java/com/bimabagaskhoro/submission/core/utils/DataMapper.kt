@@ -16,6 +16,7 @@ object DataMapper {
                 original_language = it.original_language,
                 desc = it.desc,
                 vote_average = it.vote_average,
+                backdrop = it.backdrop,
                 isFav = false
             )
             tvShowList.add(tvShow)
@@ -33,6 +34,7 @@ object DataMapper {
                 original_language = it.original_language,
                 desc = it.desc,
                 vote_average = it.vote_average,
+                backdrop = it.backdrop,
                 isFav = it.isFav
             )
         }
@@ -45,6 +47,7 @@ object DataMapper {
         original_language = input.original_language,
         desc = input.desc,
         vote_average = input.vote_average,
+        backdrop = input.backdrop,
         isFav = input.isFav
     )
 }

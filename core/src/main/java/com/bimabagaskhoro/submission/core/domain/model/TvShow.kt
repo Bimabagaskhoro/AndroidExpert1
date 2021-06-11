@@ -19,5 +19,7 @@ data class TvShow(
 
     val vote_average: Double,
 
+    val backdrop: String,
+
     val isFav: Boolean
 ): Parcelable
